@@ -12,6 +12,6 @@ print(y)
 print(Y)
 
 if x==Y:
-    print ("It's palindrome!")
+    print("It's palindrome!")
 else:
-    print ('not today...')
+    print('not today...')
