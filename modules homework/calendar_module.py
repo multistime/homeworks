@@ -16,4 +16,4 @@ month=int(bdaysplit[1])
 year=int(bdaysplit[2])
 
 print('\nдень недели:')
-print(calendar.weekday(year, month, day)+1)
+print(calendar.day_name[calendar.weekday(year, month, day)])
