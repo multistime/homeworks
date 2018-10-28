@@ -1,6 +1,8 @@
 import string
+import os
 
-with open('some.txt') as f:
+print(os.getcwd())
+with open('modules homework/some.txt') as f:
   text = f.read().splitlines()
 
 print(text)
@@ -15,6 +17,9 @@ print(characters)
 
 print('\n')
 
-text2 = open('some.txt').read()
+text2 = open('modules homework/some.txt').read()
 
 print(text2)
+
+string.ascii_letters #все буквы
+

@@ -5,7 +5,7 @@ calendar.setfirstweekday(0)
 bday = input('enter your birthday date DD.MM.YYYY:')
 
 print(bday)
-print('\nВаш ввод:')
+print('\nВы родились:')
 
 bdaysplit = bday.split(".")
 
@@ -15,5 +15,5 @@ day=int(bdaysplit[0])
 month=int(bdaysplit[1])
 year=int(bdaysplit[2])
 
-print('\nдень недели:')
+print('\nэто был:')
 print(calendar.day_name[calendar.weekday(year, month, day)])
