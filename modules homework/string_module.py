@@ -9,6 +9,9 @@ print(text)
 
 lines = len(text)
 words = sum(len(i.split()) for i in text)
+# не совсем то, что нужно было
+# нужно было найти все буквы, которые используются в тексте,
+# и посчитать, сколько раз каждая из них встречается
 characters = sum(len(i) for i in text)
 
 print(lines)
