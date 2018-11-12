@@ -27,8 +27,7 @@ x = (b**2+c**2-a**2)/(2*b*c)
 y = (a**2+c**2-b**2)/(2*a*c)
 z = degrees(acos(x))+degrees(acos(y))
 
+print('\n')
 print(degrees(acos(x)))
 print(degrees(acos(y)))
 print(180-z)
-
-print(x+y+z)

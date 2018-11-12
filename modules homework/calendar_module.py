@@ -1,19 +1,13 @@
-import calendar
+from calendar import day_name, weekday
 
-calendar.setfirstweekday(0)
 
-bday = input('enter your birthday date DD.MM.YYYY:')
+while True:
+    try:
+        date = input('Enter date (DD.MM.YYYY): ')
+        day, month, year = map(int, date.split('.'))
+    except:
+        print('Invalid input')
+    else:
+        break
 
-print(bday)
-print('\nВы родились:')
-
-bdaysplit = bday.split(".")
-
-print(bdaysplit)
-
-day=int(bdaysplit[0])
-month=int(bdaysplit[1])
-year=int(bdaysplit[2])
-
-print('\nэто был:')
-print(calendar.day_name[calendar.weekday(year, month, day)])
+print(day_name[weekday(year, month, day)])
